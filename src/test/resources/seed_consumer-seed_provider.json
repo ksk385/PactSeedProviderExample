@@ -1,0 +1,46 @@
+{
+  "consumer": {
+    "name": "Seed Consumer"
+  },
+  "provider": {
+    "name": "Seed Provider"
+  },
+  "interactions": [
+    {
+      "description": "a request for seeds",
+      "request": {
+        "method": "get",
+        "path": "/seeds"
+      },
+      "response": {
+        "status": 200,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "seeds": "some seeds"
+        }
+      }
+    },
+    {
+      "description": "a request for seeds",
+      "provider_state": "there are no seeds",
+      "request": {
+        "method": "get",
+        "path": "/seeds"
+      },
+      "response": {
+        "status": 404,
+        "headers": {
+          "Content-Type": "application/json"
+        },
+        "body": {
+          "error": "not found"
+        }
+      }
+    }
+  ],
+  "metadata": {
+    "pactSpecificationVersion": "2.0.0"
+  }
+}

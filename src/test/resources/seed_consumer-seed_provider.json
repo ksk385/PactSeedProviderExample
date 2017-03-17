@@ -8,6 +8,7 @@
   "interactions": [
     {
       "description": "a request for seeds",
+      "provider_state": "there are seeds",
       "request": {
         "method": "get",
         "path": "/seeds"

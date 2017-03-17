@@ -36,7 +36,6 @@
 			<scope>test</scope>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/com.reagroup/pact-jvm-provider-spring-mvc_2.11 -->
 		<dependency>
 			<groupId>com.reagroup</groupId>
 			<artifactId>pact-jvm-provider-spring-mvc_2.11</artifactId>
